@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Nidhi Giridhar's User Page: CSE 110 Lab 2</title>
-    <!-- <link rel="stylesheet" href="/css/master.css"> -->
+    <link rel="icon" href="/image-files/icon.png">
   </head>
 
   <body style="background-color:#e7dcf5">
@@ -22,15 +22,8 @@
         <ol>
           <li><a href="#AboutMe">About Me</a></li>
           <li><a href="#Favorites">Favorites</a></li>
-            <ol>
-              <li><a href="#Food">Food</a></li>
-              <li><a href="#Videos">Videos</a></li>
-              <li><a href="#TVShows">TV Shows</a></li>
-              <li><a href="#Movies">Movies</a></li>
-              <li><a href="#Snacks">Snacks</a></li>
-            </ol>
-            <li><a href="#FunCode">Fun Code</a></li>
-            <li><a href="#FeedBack">FeedBack</a></li>
+          <li><a href="#FunCode">Fun Code</a></li>
+          <li><a href="#FeedBack">FeedBack</a></li>
         </ol>
       </nav>
     </section>
@@ -85,6 +78,10 @@
         </picture>
           <img src="https://filmdaily.co/wp-content/uploads/2020/06/lucifer-lede-1-1300x731.jpg"
           alt="Lucifer" style="width:45%;height:50%">
+          <details>
+            <summary>More Info on Images</summary>
+            <p>The first image is a Peaky Blinders poster and the second is a Lucifer poster.</p>
+          </details>
       </div>
 
       <div id="Movies">
@@ -98,7 +95,22 @@
         </ol>
         <img src="https://i.pinimg.com/originals/ab/8e/30/ab8e300aad19162dc27993c22adf267b.gif" alt="Tony Stark">
       </div>
-      <a href="#Favorites">Back to Favorites</a>
+
+      <div id="Music">
+        <h3>Music</h3>
+        <figure>
+          <figcaption>Listen to my current favorite song, No Halo by BROCKHAMPTON, here:</figcaption>
+          <audio controls>
+            <source src="/audio-files/NoHalo-Brockhampton.mp3" type="audio/mp3">
+            <source src="/video-files/NoHalo-Brockhampton.mp4" type="video/mp4">
+          </audio>
+        </figure>
+        <figure>
+          <figcaption>Watch the music video here!</figcaption>
+          <video src="/video-files/NoHalo-Brockhampton.mp4" controls>
+          </video>
+        </figure>
+      </div>
 
       <div id="Snacks">
         <h3>Snacks!</h3>
@@ -156,6 +168,15 @@
           <option value="Reese's">Reese's</option>
         </optgroup>
       </select>
+      <a href="#Favorites">Back to Favorites</a><br>
+
+      <canvas id="canvas" width="100" height="100"></canvas>
+      <script>
+        const canvas = document.querySelector('canvas');
+        const context = canvas.getContext('2d');
+        context.fillStyle = '#73578a';
+        context.fillRect(0,0,100,100);
+      </script>
     </section>
     <hr>
 
@@ -171,6 +192,11 @@
           </code>
         </pre>
       </figure>
+
+      <button type="button" name="button">Click Here!</button>
+      <template id="template">
+        <div>Click Here!</div>
+      </template>
     </section>
 
     <hr>
@@ -205,6 +231,10 @@
           Enter Text Here
         </textarea>
       </form>
+
+      <svg width="100" height="100">
+        <rect width="100" height="100" style="fill:#73578a"></rect>
+      </svg>
     </section>
 
     <hr>
