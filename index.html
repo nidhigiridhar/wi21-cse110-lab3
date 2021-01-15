@@ -204,6 +204,8 @@
     <section id="Feedback">
       <h2>FeedBack!</h2>
       <form>
+        <h2>FeedBack!</h2>
+      <form>
         <fieldset>
           <legend>Your Info:</legend>
           <label for="fname">First name:</label><br>
@@ -211,7 +213,9 @@
           <label for="lname">Last name:</label><br>
           <input type="text" id="lname" name="lname"><br>
           <label for="email">Email:</label><br>
-          <input type="text" id="email" name="email"><br>
+          <input type="email" id="email" name="email"><br>
+          <label for="tel">Phone Number:</label><br>
+          <input type="tel" id="tel" name="tel"><br>
           <label for="age">Age:</label><br>
           <input list="agelist" id="age" name="age"><br>
 
@@ -221,6 +225,13 @@
             <option value="26-30"></option>
             <option value=">30"></option>
           </datalist>
+
+          <label for="date">Date:</label><br>
+          <input type="date" id="date" name="date"><br>
+          <label for="rating">Rate this page:</label><br>
+          <input type="range" name="range" value="0" min="0" max="10" step="1"><br>
+          <label for="recommendations">Any recommendations for fun websites?</label><br>
+          <input type="url" name="url"><br>
         </fieldset>
 
         <label>Did you enjoy reading this page?</label><br>
@@ -229,7 +240,11 @@
         <label>Is there anything else you would like to know about me?</label><br>
         <textarea name="MoreInfo" rows="3" cols="50">
           Enter Text Here
-        </textarea>
+        </textarea><br>
+        <label>Or, upload a file with your feedback!</label><br>
+        <input type="file" name="file" value="file"><br>
+        <input type="reset" name="reset" value="reset"><span> OR </span>
+        <input type="submit" name="submit" value="submit"><br>
       </form>
 
       <svg width="100" height="100">
