@@ -4,22 +4,33 @@
     <meta charset="utf-8">
     <title>Nidhi Giridhar's User Page: CSE 110 Lab 2</title>
     <link rel="icon" href="image-files/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <style>
+      header {
+        text-align: center;
+      }
+      #Introduction {
+        text-align: center;
+      }
+    </style>
   </head>
 
   <body style="background-color:#e7dcf5">
     <header>
-      <h1>Welcome!</h1>
+      <h1 id="title">Welcome!</h1>
     </header>
 
 
     <main id="Introduction">
-      <h2>You are currently viewing <em>Nidhi Giridhar's</em> User Page.</h2>
+      <h2 id="main-h2">You are currently viewing <em>Nidhi Giridhar's</em> User Page.</h2>
     </main>
 
-    <section>
+    <section id="contents">
       <h2>Contents</h2>
       <nav>
-        <ol>
+        <ol class="list">
           <li><a href="#AboutMe">About Me</a></li>
           <li><a href="#Favorites">Favorites</a></li>
           <li><a href="#FunCode">Fun Code</a></li>
@@ -29,42 +40,42 @@
     </section>
 
 
-    <section id="AboutMe">
-      <h3>About Me</h3>
-      <span>I am currently a third year Computer Engineering Major at UCSD. I am from
+    <section class="main-sec" id="AboutMe">
+      <h2>About Me</h2>
+      <div>I am currently a third year Computer Engineering Major at UCSD. I am from
       Bangalore, India and currently live in San Diego. Keep reading to find out
-      more about me and my life!</span>
+      more about me and my life!</div>
     </section>
 
 
-    <section id="Favorites">
+    <section class="main-sec" id="Favorites">
       <h2>My Favorites!</h2>
 
-      <div id="Food">
+      <div class="sub-sec" id="Food">
         <h3>Food!</h3>
-        <div>Here are some of my favorite foods!</div>
-        <img src="https://myfoodstory.com/wp-content/uploads/2019/10/Easy-Aloo-Chaat-Delhi-Style-2.jpg" alt="Aloo Chaat" style="width:30%;height:30%">
-        <img src="https://www.cookwithmanali.com/wp-content/uploads/2015/07/Restaurant-Style-Recipe-Paneer-Tikka.jpg" alt="Paneer Tikka" style="width:30%;height:30%">
+        <div class="Description">Here are some of my favorite foods!</div>
+        <img src="https://myfoodstory.com/wp-content/uploads/2019/10/Easy-Aloo-Chaat-Delhi-Style-2.jpg" alt="Aloo Chaat" style="width:30%;height:30%;display:block;">
+        <img src="https://www.cookwithmanali.com/wp-content/uploads/2015/07/Restaurant-Style-Recipe-Paneer-Tikka.jpg" alt="Paneer Tikka" style="width:30%;height:30%;display: inline;">
         <img src="https://onepotrecipes.com/wp-content/uploads/2020/02/Avocado-Egg-Toast.jpg"
-        alt="Avocado toast with egg" style="width:30%;height:30%">
+        alt="Avocado toast with egg" style="width:30%;height:30%;display: inline;">
         <aside>
           <p>The first two images are of <b>Chaats: Indian Street food</b>!</p>
         </aside>
       </div>
 
-      <div id="Videos">
+      <div class="sub-sec" id="Videos">
         <h3>Videos</h3>
-        <div>I recently discovered lego cooking video on yt and have been addicted to them since. I would highly recommend checking them out! My favorite one so far is the <strong>Lego Chocolate Cake!</strong>
+        <div class="Description">I recently discovered lego cooking video on yt and have been addicted to them since. I would highly recommend checking them out! My favorite one so far is the <strong>Lego Chocolate Cake!</strong>
         </div>
         <iframe width="400" height="400" src="https://www.youtube.com/embed/qnfYo7RFER0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/qgVOky5Axi0" width="400" height="400" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
-      <div id="TVShows">
+      <div class="sub-sec" id="TVShows">
         <h3>TV Shows</h3>
-        <div>
+        <div class="Description">
           I absolutely love <i>crime mystery</i> shows and <i>sitcoms</i>! Here are some of my favorites:
-          <ul>
+          <ul class="list">
             <li>Lucifer</li>
             <li>Peaky Blinders</li>
             <li>Sherlock</li>
@@ -73,30 +84,27 @@
             <li>Modern Family</li>
           </ul>
         </div>
-        <picture>
-          <img src="https://s3.amazonaws.com/photos.bcheights.com/wp-content/uploads/2019/10/03123602/peaky-blinders-online.jpg" srcset="https://s3.amazonaws.com/photos.bcheights.com/wp-content/uploads/2019/10/03123602/peaky-blinders-online.jpg 1200w, https://pbs.twimg.com/profile_images/1159601095309758465/hdjeX4rS_400x400.jpg 800w" alt="Peaky Blinders" sizes="(max-width: 801px) 800px, 1200px" style="width:45%;height:50%">
-        </picture>
-          <img src="https://filmdaily.co/wp-content/uploads/2020/06/lucifer-lede-1-1300x731.jpg"
-          alt="Lucifer" style="width:45%;height:50%">
+          <img src="https://s3.amazonaws.com/photos.bcheights.com/wp-content/uploads/2019/10/03123602/peaky-blinders-online.jpg" style="width:45%;height:50%">
+          <img src="https://filmdaily.co/wp-content/uploads/2020/06/lucifer-lede-1-1300x731.jpg" alt="Lucifer" style="width:45%;height:50%">
           <details>
             <summary>More Info on Images</summary>
             <p>The first image is a Peaky Blinders poster and the second is a Lucifer poster.</p>
           </details>
       </div>
 
-      <div id="Movies">
+      <div class="sub-sec" id="Movies">
         <h3>Movies!!</h3>
-        Action movies are the way to go!! A list of my favs:
-        <ol>
+        <div class="Description">Action movies are the way to go!! A list of my favs:</div>
+        <ol class="list">
           <li>Mission Impossible (esp 4 and 6)</li>
           <li>Marvel (every.single.one)</li>
           <li>Fast and Furious</li>
           <li>Kingsman</li>
         </ol>
-        <img src="https://i.pinimg.com/originals/ab/8e/30/ab8e300aad19162dc27993c22adf267b.gif" alt="Tony Stark">
+        <img src="https://i.pinimg.com/originals/ab/8e/30/ab8e300aad19162dc27993c22adf267b.gif" alt="Tony Stark" style="max-width: 40%; min-width: 20%;">
       </div>
 
-      <div id="Music">
+      <div class="sub-sec" id="Music">
         <h3>Music</h3>
         <figure>
           <figcaption>Listen to my current favorite song, No Halo by BROCKHAMPTON, here:</figcaption>
@@ -112,7 +120,7 @@
         </figure>
       </div>
 
-      <div id="Snacks">
+      <div class="sub-sec" id="Snacks">
         <h3>Snacks!</h3>
         <table style="border: 1px solid black">
           <caption>Here are my ratings for popular snacks on a scale of 1-5 (1 being the lowest)
@@ -180,7 +188,7 @@
     </section>
     <hr>
 
-    <section id="FunCode">
+    <section class="main-sec" id="FunCode">
       <h2>Fun Code!</h2>
       <figure>
         <figcaption>A funny piece of code cause the only programming joke I know is my code :(</figcaption>
@@ -201,8 +209,8 @@
 
     <hr>
 
-    <section id="Feedback">
-        <h2>FeedBack!</h2>
+    <section class="main-sec" id="Feedback">
+        <h2 >FeedBack!</h2>
       <form>
         <fieldset>
           <legend>Your Info:</legend>
@@ -218,7 +226,7 @@
           <input list="agelist" id="age" name="age"><br>
 
           <datalist id="agelist">
-            <option value="<18"></option>
+            <option value="18"></option>
             <option value="18-25"></option>
             <option value="26-30"></option>
             <option value=">30"></option>
@@ -251,6 +259,43 @@
     </section>
 
     <hr>
+
+    <div class="fbox">
+      <div style="background-color: #ebe7ee; flex: 1 1 auto">Come</div>
+      <div style="background-color: #d6b0f3; flex: 1 1 auto">Back</div>
+      <div style="background-color: #be7af5; flex: 1 1 auto">Again!</div>
+    </div>
+
+    <br>
+
+    <div class="grid">
+      <div style="background-color: #ebe7ee; flex: 1 1 auto">Come</div>
+      <div style="background-color: #d6b0f3; flex: 1 1 auto">Back</div>
+      <div style="background-color: #be7af5; flex: 1 1 auto">Again!</div>   
+      <div style="background-color: #ebe7ee; flex: 1 1 auto">Come</div>
+      <div style="background-color: #d6b0f3; flex: 1 1 auto">Back</div>
+      <div style="background-color: #be7af5; flex: 1 1 auto">Again!</div> 
+    </div>
+
+    <br>
+
+    <div class="relative">
+      Here is a random piece of text.
+      <div class="absolute">
+        Another random piece of text.  
+      </div>
+    </div>
+
+    <br>
+
+    <div id="BM1">
+      Box Model 1
+    </div>
+
+    <div id="BM2">
+      Box Model 2
+    </div>
+
     <footer>
       <a href="#Introduction">Back to top</a> <br>
       Author: Nidhi Giridhar <br>
