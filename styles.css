@@ -1,0 +1,121 @@
+/* center align and underline section headings */
+section h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* add auto margin to heading 1*/
+h1 {
+    margin: auto;
+}
+
+/* change title color */
+[id="title"] {
+    color: rgb(109, 64, 136);
+}
+
+/* if screen size is more than 400px wide, set size of <h2> to 25px*/
+@media screen and (min-width: 400px) {
+    h2 {
+        font-size: 25px;
+    }
+}
+
+/* if screen size is less than or equal to 400px wide, set size of <h2> to 15px*/
+@media screen and (max-width: 400px) {
+    h2 {
+        font-size: 15px;
+    }
+}
+
+/* add shadow to contents section */
+main + section {
+    text-shadow: 2px 2px rgb(146, 132, 146);
+}
+
+/* color text in favorites section */
+div>div, div>figure {
+    color: rgba(101,79,134,1);
+}
+
+/* add background color and change font of feedback section */
+#Feedback * {
+    background-color: hsl(46, 23%, 72%);
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+/* style every descption */
+div.Description {
+    text-transform: lowercase;
+    font-size: 1.1em;
+}
+
+/* add black border to images */
+div ~ img {
+    border-radius: 0.5cm;
+    border-color: hsla(0, 0%, 6%, 1);
+    border-style: solid;
+    border-width: medium;
+}
+
+/* color lists */
+.list {
+    color:darkslategray;
+}
+
+/* link turns white when you hover over it */
+a:hover {
+    color: white;
+}
+
+/* turn selected link black */
+a:active {
+    color: black;
+}
+
+/* flex box */
+.fbox {
+    display: flex;
+    text-align: center;
+}
+
+/* grid */
+.grid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40px 40px;
+    column-gap: 5px;
+}
+
+/* relative and absolute positioning */
+.relative {
+    position: relative;
+    border: 2px solid black;
+}
+.absolute {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* Box model visualizations */
+#BM1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 5px solid #000;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 5vw;
+}
+#BM2 {
+    margin: 10px, 10px, 10px, 10px;
+    border: 2px solid black;
+    padding: 10px, 10px, 10px, 10px;
+    height: 10%;
+    width: 10%;
+}
